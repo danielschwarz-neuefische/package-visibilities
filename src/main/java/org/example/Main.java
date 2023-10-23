@@ -2,6 +2,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        WashingMachine washingMachine = new WashingMachine();
+        washingMachine.fill("T-shirt");
+        washingMachine.fill("Jeans");
+        washingMachine.fill("Socks");
+        washingMachine.turnOn();
+        washingMachine.waitUntilDone();
+        String clean = washingMachine.empty();
+
+        System.out.println(clean);
     }
 }
