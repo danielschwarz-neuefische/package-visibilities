@@ -1,4 +1,4 @@
-package org.example;
+package laundry;
 
 public class WashingMachine {
 
