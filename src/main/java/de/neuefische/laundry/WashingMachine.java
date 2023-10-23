@@ -1,5 +1,7 @@
 package de.neuefische.laundry;
 
+import java.util.Objects;
+
 public class WashingMachine {
 
     private String contents = "";
@@ -39,5 +41,23 @@ public class WashingMachine {
                 "contents='" + contents + '\'' +
                 ", clean=" + clean +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        WashingMachine that = (WashingMachine) o;
+
+        if (clean != that.clean) return false;
+        return Objects.equals(contents, that.contents);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = contents != null ? contents.hashCode() : 0;
+        result = 31 * result + (clean ? 1 : 0);
+        return result;
     }
 }
