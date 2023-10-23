@@ -1,4 +1,4 @@
-package org.example;
+package de.neuefische.laundry;
 
 public class WashingMachine {
 
@@ -10,7 +10,7 @@ public class WashingMachine {
         clean = false;
     }
 
-    public void turnOn() {
+    protected void turnOn() {
     }
 
     public void waitUntilFinished() {

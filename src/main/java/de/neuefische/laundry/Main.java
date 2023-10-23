@@ -1,4 +1,4 @@
-package org.example;
+package de.neuefische.laundry;
 
 public class Main {
     public static void main(String[] args) {
