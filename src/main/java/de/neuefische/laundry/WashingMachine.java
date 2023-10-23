@@ -32,4 +32,12 @@ public class WashingMachine {
         contents = "";
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "WashingMachine{" +
+                "contents='" + contents + '\'' +
+                ", clean=" + clean +
+                '}';
+    }
 }
